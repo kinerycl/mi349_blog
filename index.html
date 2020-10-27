@@ -10,90 +10,106 @@
 <body>
     <header>
         <h1>Clare's Blog</h1>
-        <nav><a href="index.html">Home</a> |
-        <a href="about.html">About Clare</a> |
-        <a href="contact.html">Contact Us</a>
-        </nav>
     </header>
+    <div class="sticky">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Clare</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
     <section id="blog">
-        <h2>Clare's Reads</h2>
-        <article class='blog-post'>
-            <h2><b>Quarentine Read #1: Lean In</b></h2>
-            <address>By Clare Kinery</address>
-            <time datetime="2020-10-08" title="October 8, 2020">Oct 8, 2020</time>
-            <p><img src="images/leanIn.jpg" alt="Lean In Book" width="150" height="250"></p>
-            <h3>Sandberg's Experience</h3>
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Title</th>
-                    <th>Employer</th>
-                </tr>
-                <tr>
-                    <td>2008-Present</td>
-                    <td>Cheif Operating Officer</td>
-                    <td>Facebook</td>
-                </tr>
-                <tr>
-                    <td>2001-2008</td>
-                    <td>VP, Global Sales and Operations</td>
-                    <td>Google</td>
-                </tr>
-                <tr>
-                    <td>1984-1991</td>
-                    <td>Cheif of Staff</td>
-                    <td>Tresury Department</td>
-                </tr>
-            </table>
-            <p>
-                This year I’ve had a lot of free time on my hands with the global pandemic.
-                With this abundance of time I’ve decided to start reading again. I’ve decided to
-                share some of my favorite quarantine reads. The first book I would recommend is “Lean In:
-                Women, Work, and the Will to Lead
-                ” by Sheryl Sandberg. 
-            </p>
-            <p>
-                This book is specifically about navigating the tech industry as a woman.
-                The target audience is not only geared to women, but anyone interested
-                in gender equality in and outside of the workplace. The tech industry
-                is well known for being biased against women. This book not only tackles
-                the realities women face in tech, but also tries to aid in navigating
-                these difficult situations. It explains how gender impacts careers. 
-            </p>
-            <p>
-                “Lean In” discusses gender bias outside of tech and even industry in general.
-                It explains the obstacles women face in modern life altogether. It really opened
-                my mind to new perspectives. Overall this is a great read if you are interested in 
-                gender equality. By the end of this book, you understand both the biases women face in 
-                and outside of the workplace. You will also be better equipped with how to handle the situation 
-                no matter your gender. Gender inequality faces all genders and it’s a great topic to be educated on. 
-            </p>
-        </article>
-        <article class='blog-post'>
-            <h2><b>Quarentine Read #2: Moonwalking with Einstein</b></h2>
-            <address>By Clare Kinery</address>
-            <time datetime="2020-10-08" title="October 8, 2020">Oct 8, 2020</time>
-            <p><img src="images/moonWalking.jpg" alt="Moonwalking book" width="150" height="250"></p>
-            <p>
-                The second book I chose to share is “Moonwalking with Einstein: The Art and Science of Remembering Everything”
-                by Joshua Foer. I personally have always had what I consider to be a bad memory. I always have trouble
-                remembering events and have struggled in history classes. Having a bad memory is something that I have
-                always thought of as something I am unable to control.    
-            </p>
-            <p>
-                Due to this, I thought it would be fun to learn more about how memory works. Foer’s book not only 
-                explains how memory works but how to improve yours. Foer is a journalist who becomes interested in 
-                memory competitions after writing a story on it. He becomes so intrigued that he decides to enter 
-                himself. “Moonwalking with Einstein” is about Foer’s journey to becoming a U.S.A memory champion.
-            </p>
-            <p>
-                This story is extremely interesting for anyone who wants to know more about their own mind and how it 
-                works. It taught me that my bad memory was not just genetic but something I could improve. After reading
-                this, you will have memory tools that will aid in improving your mental agility. The mind is amazing, 
-                and a super powerful tool human possess. Overall, “Moonwalking with Einstein” is not only an educational 
-                read but fast paced and enjoyable. 
-            </p>
-        </article>
+        <h2 id='title'>Clare's Reads</h2>
+        <div id='blog-posts'>
+            <article class='blog-post'>
+                <div class='article_header'>
+                    <h2><b>Quarentine Read #1: Lean In</b></h2>
+                    <address>By Clare Kinery</address>
+                    <time datetime="2020-10-08" title="October 8, 2020">Oct 8, 2020</time>
+                </div>
+                    <figure>
+                        <img src="images/leanIn.jpg" alt="Lean In Book" width="150" height="250">
+                        <figcaption>“Lean In: Women, Work, and the Will to Lead” by Sheryl Sandberg</figcaption>
+                    </figure>
+                <h3>Sandberg's Experience</h3>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Title</th>
+                        <th>Employer</th>
+                    </tr>
+                    <tr>
+                        <td>2008-Present</td>
+                        <td>Cheif Operating Officer</td>
+                        <td>Facebook</td>
+                    </tr>
+                    <tr>
+                        <td>2001-2008</td>
+                        <td>VP, Global Sales and Operations</td>
+                        <td>Google</td>
+                    </tr>
+                    <tr>
+                        <td>1984-1991</td>
+                        <td>Cheif of Staff</td>
+                        <td>Tresury Department</td>
+                    </tr>
+                </table>
+                <p>
+                    This year I’ve had a lot of free time on my hands with the global pandemic.
+                    With this abundance of time I’ve decided to start reading again. I’ve decided to
+                    share some of my favorite quarantine reads. The first book I would recommend is “Lean In:
+                    Women, Work, and the Will to Lead
+                    ” by Sheryl Sandberg. 
+                </p>
+                <p>
+                    This book is specifically about navigating the tech industry as a woman.
+                    The target audience is not only geared to women, but anyone interested
+                    in gender equality in and outside of the workplace. The tech industry
+                    is well known for being biased against women. This book not only tackles
+                    the realities women face in tech, but also tries to aid in navigating
+                    these difficult situations. It explains how gender impacts careers. 
+                </p>
+                <p>
+                    “Lean In” discusses gender bias outside of tech and even industry in general.
+                    It explains the obstacles women face in modern life altogether. It really opened
+                    my mind to new perspectives. Overall this is a great read if you are interested in 
+                    gender equality. By the end of this book, you understand both the biases women face in 
+                    and outside of the workplace. You will also be better equipped with how to handle the situation 
+                    no matter your gender. Gender inequality faces all genders and it’s a great topic to be educated on. 
+                </p>
+            </article>
+            <article class='blog-post'>
+                <div class='article_header'>
+                    <h2><b>Quarentine Read #2: Moonwalking with Einstein</b></h2>
+                    <address>By Clare Kinery</address>
+                    <time datetime="2020-10-09" title="October 9, 2020">Oct 9, 2020</time>
+                </div>
+                    <figure>
+                        <img src="images/moonWalking.jpg" alt="Moonwalking book" width="150" height="250">
+                        <figcaption>"Moonwalking with Einstein: The Art and Science of Remembering Everything"
+                            by Joshua Foer</figcaption>
+                    </figure>
+                <p>
+                    The second book I chose to share is “Moonwalking with Einstein: The Art and Science of Remembering Everything”
+                    by Joshua Foer. I personally have always had what I consider to be a bad memory. I always have trouble
+                    remembering events and have struggled in history classes. Having a bad memory is something that I have
+                    always thought of as something I am unable to control.    
+                </p>
+                <p>
+                    Due to this, I thought it would be fun to learn more about how memory works. Foer’s book not only 
+                    explains how memory works but how to improve yours. Foer is a journalist who becomes interested in 
+                    memory competitions after writing a story on it. He becomes so intrigued that he decides to enter 
+                    himself. “Moonwalking with Einstein” is about Foer’s journey to becoming a U.S.A memory champion.
+                </p>
+                <p>
+                    This story is extremely interesting for anyone who wants to know more about their own mind and how it 
+                    works. It taught me that my bad memory was not just genetic but something I could improve. After reading
+                    this, you will have memory tools that will aid in improving your mental agility. The mind is amazing, 
+                    and a super powerful tool human possess. Overall, “Moonwalking with Einstein” is not only an educational 
+                    read but fast paced and enjoyable. 
+                </p>
+            </article>
+        </div>
     </section>
     <section id='sign-up'>
         <h2>Sign up</h2>
